@@ -309,6 +309,7 @@ body{
 .skill{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 200px;
      /* display: flex; 
      justify-content: space-between;  */
 } 
@@ -508,6 +509,7 @@ body{
 .path-2{animation: path2 1s 1s linear forwards;}
 .path-3{animation: path3 1s 1s linear forwards;}
 .path-4{animation: path4 1s 1s linear forwards;}
+.path-5{animation: path4 1s 1s linear forwards;}
 
 @keyframes path1 {
     100%{
@@ -534,6 +536,12 @@ body{
     }
 }
 
+@keyframes path5 {
+    100%{
+        stroke-dashoffset: 130;
+    }
+}
+
 .chart-bar .percentage{
     position: absolute;
     top: 50%;
@@ -557,3 +565,42 @@ body{
     animation: display 0.5s 1s linear forwards;
     opacity: 0;
 }
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #0ef;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  label{
+    color: black;
+    font-size: 23px;
+    font-style: bold;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #0ef;
+  }
+  
+  .contactcontainer{
+    border-radius: 5px;
+    background-color: rgb(74, 131, 216);
+    padding: 20px;
+    width: 500px;
+    margin-left: 350px;
+  }
