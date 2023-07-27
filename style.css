@@ -295,3 +295,265 @@ body{
     margin-bottom: 5rem;
 }
 
+.skilltitle{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+
+.skilltitle span{
+    color: #0ef;
+}
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+     /* display: flex; 
+     justify-content: space-between;  */
+} 
+
+.skillcontainer{
+    width: 600px;
+    height: 500px;
+    padding: 75px;
+}
+
+.skillheading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar{
+    font-size: 23px;
+}
+
+.Technical-bar .bar{
+    margin: 40px 0;
+}
+
+.Technical-bar .bar:first-child{
+    margin-top: 0;
+}
+
+.Technical-bar .bar:last-child{
+    margin-bottom: 0;
+}
+
+.Technical-bar .bar .info{
+    margin-bottom: 5px;
+}
+
+.Technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: display 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.Technical-bar .bar .percent-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animi 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animi{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.Technical-bar .bar .percent-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animi 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.percent-line.java span{
+    width: 90%;
+}
+
+.percent-line.git span{
+    width: 75%;
+}
+
+.percent-line.visual-studio span{
+    width: 95%;
+}
+
+.percent-line.nodejs span{
+    width: 50%;
+}
+
+.percent-line.reactjs span{
+    width: 60%;
+}
+
+.percent-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top:-20px;
+    right: -20px;
+    animation: display 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.percent-line.java span::after{
+    content: "90%";
+}
+
+.percent-line.git span::after{
+    content: "75%";
+}
+
+.percent-line.visual-studio span::after{
+    content: "95%";
+}
+
+.percent-line.nodejs span::after{
+    content: "50%";
+}
+
+.percent-line.reactjs span::after{
+    content: "60%";
+}
+
+.percent-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: black;
+    top: -10px;
+    right: 0;
+    animation: display 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes display{
+    100%{
+        opacity: 1;
+    }
+}
+
+.chart-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.chart-bars .chart-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.chart-bars .chart-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.chart-bars .chart-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: bar 1s linear forwards;
+}
+
+@keyframes bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation: path1 1s 1s linear forwards;}
+.path-2{animation: path2 1s 1s linear forwards;}
+.path-3{animation: path3 1s 1s linear forwards;}
+.path-4{animation: path4 1s 1s linear forwards;}
+
+@keyframes path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes path2 {
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+
+
+@keyframes path3 {
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes path4 {
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+
+.chart-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 800;
+    animation: display 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.chart-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: display 0.5s 1s linear forwards;
+    opacity: 0;
+}
