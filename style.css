@@ -7,7 +7,7 @@
 
 body{
     color: aliceblue;
-    background: #081b29;
+    background: #141414;
 }
 
 .header{
@@ -16,7 +16,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #051129;
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,13 +53,13 @@ body{
 }
 
 #home:hover{
-    color: #0ef;
+    color:    #FFD700 ;
 }
 
 
 
 .navbar a:hover{
-    color: #0f0;
+    color:    #FFD700 ;
     cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ body{
 }
 
 .home-content h3 span{
-    color: #0ef;
+    color:    #FFD700 ;
 }
 
 .home-content h1{
@@ -115,10 +115,10 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid    #FFD700 ;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color:    #FFD700 ;
     text-decoration: none;
     margin: 30px 15px 30px 0;
 
@@ -130,15 +130,15 @@ body{
 }
 
 .home-sci a:hover{
-    background: #0ef;
+    background:    #FFD700 ;
     color: black;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px    #FFD700 ;
 }
 
 .btn-box{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background:    #FFD700 ;
     border-radius: 40px;
     font-size: 16px;
     color: black;
@@ -149,8 +149,8 @@ body{
     opacity: 0;
     animation: top 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef
-    0 0 25px #0ef;
+    box-shadow: 0 0 5px    #FFD700 
+    0 0 25px    #FFD700 ;
 }
 
 .btn-box:hover{
@@ -277,7 +277,7 @@ body{
 }
 
 .about-text h2 span{
-    color: #0ef;
+    color:    #FFD700 ;
 }
 
 .about-text h4{
@@ -303,7 +303,7 @@ body{
 }
 
 .skilltitle span{
-    color: #0ef;
+    color:    #FFD700 ;
 }
 
 .skill{
@@ -374,7 +374,7 @@ body{
 
 .Technical-bar .bar .percent-line span{
     height: 100%;
-    background-color: #0ef;
+    background-color:    #FFD700 ;
     position: absolute;
     border-radius: 10px;
     animation: animi 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -498,7 +498,7 @@ body{
 
 .path{
     stroke-width: 10;
-    stroke: #0ef;
+    stroke:    #FFD700 ;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -538,7 +538,7 @@ body{
 
 @keyframes path5 {
     100%{
-        stroke-dashoffset: 130;
+        stroke-dashoffset: 135;
     }
 }
 
@@ -580,7 +580,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #0ef;
+    background-color:    #FFD700 ;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -594,7 +594,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #0ef;
+    background-color:    #FFD700 ;
   }
   
   .contactcontainer{
@@ -604,3 +604,21 @@ input[type=text], select, textarea {
     width: 500px;
     margin-left: 350px;
   }
+
+
+  .main-text{
+    padding-top: 130px;
+    margin-top: 200px;
+  }
+
+  .main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .main-text h2 span{
+    color:    #FFD700 ;
+  }
+
+  
