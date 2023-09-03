@@ -1,12 +1,12 @@
 var typed= new Typed(".text", {
-    strings: ["Student", "Vice President", "Learner"],
+    strings: ["Final Year Student", "President of Mastro Club", "Fresher"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       

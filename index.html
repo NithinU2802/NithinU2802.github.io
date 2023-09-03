@@ -3,7 +3,7 @@
     <head>
         <title>Nithin's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="Assets/title.png" >
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -17,7 +17,7 @@
                 <a  style="--i:1" class="active" href="#Home">Home</a>
                 <a  style="--i:2"  href="#about">About</a>
                 <a  style="--i:3" href="#skill">Skill</a>
-                <a  style="--i:4" href="#Project">Projects</a>
+                <a  style="--i:4" href="#project">Projects</a>
                 <a  style="--i:5"  href="#contact">Contact</a>
             </nav>
         </header>
@@ -37,7 +37,7 @@
                     <a  href="https://github.com/NithinU2802" target="_blank" style="--i:8" ><i class='bx bxl-github' ></i></a>
                     <a  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbhCNGlrzlxmSjMKZZjrMfNSfmmnnFFSZXLkVBvZPswtTTGCwbkXwRwSljGDSLgVmJRhXv" target="_blank"  style="--i:9" ><i class='bx bx-envelope'></i></a>
                 </div>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZWxNwPdDvbwrcjqpvlfDQSFzqLZHNqBLsqzQpssQRbbKTDjCkGJbHXPZLmpSlLzJlDlFg" class="btn-box">Contact Me..!</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbhCNGlrzlxmSjMKZZjrMfNSfmmnnFFSZXLkVBvZPswtTTGCwbkXwRwSljGDSLgVmJRhXv" class="btn-box">Contact Me..!</a>
             </div>
             <!-- <div class="image">
                 <img  src="Assets/Profile.png" width="300px" height="400px">
@@ -211,43 +211,120 @@
         </section>
 
         <!-- Projects -->
-        <!-- <section>
+        <section class="project">
             <div id="portfolio" id="project">
-                <div class="main-text" id="project">
+                <div class="project-main-text" id="project">
                     <h2>Acadamic<span> Projects</span></h2>
+                </div>
+                <div class="container">
+                    <div class="fillter-buttons">
+                        <button class="btn" data-filter=".all" >All</button>
+                        <button class="btn" data-filter=".web" >Web-Application</button>
+                        <button class="btn" data-filter=".mobile" >Mobile-Application</button>
+                        <button class="btn" data-filter=".iot" >IOT Application</button>
+                    </div>
+                    
+                    <div class="portfolio-gallery">
 
-                    <div class="protfolio-context"> -->
-
-                        <!-- <div class="'row">
-                            <img src="Assets/demo.jpg" width="40px">
-                            <div class="layer">
-                                <h5>Title</h5>
-                                <p>Description</p>
-                                <a href="#"><i class="bx bx-link-external" style="color: white;"></i></a>
+                        <!-- Project 1 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project1.jpg" alt="Project-1">
                             </div>
-                        </div> -->
-                        <!-- <div class="Technical-bar">
-                        <div class="bar">
-                            <i style="color: rgb(0, 255, 251);" class="bx bxl-java"></i>
-                            <div class="info">
-                                <span>JAVA</span>
-                            </div>
-                            <div class="percent-line java">
-                                <span></span>
+                            <div class="port-content">
+                                <h3>IConnect Conference Website</h3>
+                                <p>
+                                    Project to implement an web application for Iconnect conference for college and 
+                                    maintain throughout the event.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
                             </div>
                         </div>
-                        </div> -->
+
+                        <!-- Project 2 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project2.jpg" alt="Project-1">
+                            </div>
+                            <div class="port-content">
+                                <h3>Obstacle Avoidance Voice Control Rover</h3>
+                                <p>
+                                    An Iot project that make use of controllers and Arduino IDE to code the 
+                                    bot and make it as working model control through voice and sensors.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project3.jpg" alt="Project-1">
+                            </div>
+                            <div class="port-content">
+                                <h3>College Website Using Laravel</h3>
+                                <p>
+                                    Implemented an project using laravel framework to develop an college Website
+                                    with admin panel with different logins for every department coordinator to 
+                                    reliable access of website.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project4.jpg" alt="Project-1">
+                            </div>
+                            <div class="port-content">
+                                <h3>Anti Narcotics</h3>
+                                <p>
+                                    Project Developed in Smart India Hackathon in Gujarat 2 day application 
+                                    development challenge which move as towards finalist of the event.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project5.jpg" alt="Project-1">
+                            </div>
+                            <div class="port-content">
+                                <h3>Employee Details Tracking</h3>
+                                <p>
+                                    Developed an Employee Tracking System using Node js which is used to store 
+                                    data on server that can be alter, delete and add Employee using SQL queries.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
 
 
-                        
+                        <!-- Project 6 -->
+                        <div class="port-box">
+                            <div class="port-image">
+                                <img src="Assets/project6.jpg" alt="Project-1">
+                            </div>
+                            <div class="port-content">
+                                <h3>Currency Converter</h3>
+                                <p>
+                                    Make an webpage using Angular js Framework that used to get inputs from the 
+                                    user and convert the value into other country's currency value.
+                                </p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
 
-                       
-                        <!-- </div>
+
                     </div>
 
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!--Contact-->
 
@@ -276,14 +353,20 @@
                 </form>
               </div>
         </section>
+        <br>
 
-
+        <footer>
+            <p>Copyright &copy; 2023 by Nithin U || All Right Reserved.</p>
+            <a href="#Home"><i class='bx bx-chevrons-up black-icon'></i></a>
+        </footer>
 
         <script src="script.js">
         </script>
-		<script>
-  
-  </script>
+		
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
     </body>
     
 </html>
