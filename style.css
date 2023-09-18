@@ -529,7 +529,7 @@ body{
 
 @keyframes path2 {
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 25;
     }
 }
 
