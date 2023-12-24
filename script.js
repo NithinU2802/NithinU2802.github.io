@@ -15,3 +15,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.btn');
+    const projects = document.querySelectorAll('.port-box');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+
+            // Hide all projects
+            projects.forEach(project => {
+                project.style.display = 'none';
+            });
+
+            // Show projects based on the selected filter
+            if (filterValue === 'all') {
+                projects.forEach(project => {
+                    project.style.display = 'block';
+                });
+            } else {
+                const filteredProjects = document.querySelectorAll('.port-box.' + filterValue);
+                filteredProjects.forEach(project => {
+                    project.style.display = 'block';
+                });
+            }
+        });
+    });
+});
+

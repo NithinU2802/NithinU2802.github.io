@@ -768,6 +768,10 @@ footer a {
     opacity: 1;
 }
 
+.port-box:hover{
+    transform: translateY(-.7rem);
+}
+
 .port-box:hover .port-image img{
     transform: scale(1.1);
 }
