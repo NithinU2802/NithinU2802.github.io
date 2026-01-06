@@ -20,7 +20,7 @@ body{
 
 .header{
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     padding: 20px 10%;
@@ -796,6 +796,41 @@ footer a {
     height: 50px;
     border: 1px solid var(--hover-color);
     outline: 2px solid #fff;
+}
+
+.notification-banner {
+    background: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.notification-banner p {
+    margin: 0;
+}
+
+.notification-banner a {
+    color: #141414;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.notification-banner button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
 }
 
 .port-content a i{
