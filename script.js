@@ -44,3 +44,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+function closeBanner() {
+    document.getElementById('notification-banner').style.display = 'none';
+    document.querySelector('.header').style.top = '0px';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.getElementById('copyright');
+    if (copyrightElement) {
+        copyrightElement.innerHTML = `Copyright &copy; ${currentYear} by Nithin U || All Right Reserved.`;
+    }
+});
+
